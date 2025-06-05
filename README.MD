@@ -1,32 +1,30 @@
-🚀 Learning Algorithms and Data Structures with JavaScript
+# 🚀 Learning Algorithms and Data Structures with JavaScript
 
 This project is dedicated to studying fundamental algorithms and data structures through the lens of JavaScript.
 
-🎯 Project Goal
+## 🎯 Project Goal
 
 - ✅ Implement basic and essential algorithms.
-- 📚 Understand how data structures work.
+- 📚 Best understand how data structures work.
 - 🧪 Gain practical skills in testing using the Jest library.
 
-🔍 What’s Implemented
+## 🔍 What’s Implemented
 
 - 🔢 Core algorithms (e.g., sorting, searching, etc.)
 - 🗂️ Data structures (lists, stacks, queues, trees, etc.)
 
-🛠️ Technologies
+### 🛠️ Technologies
 
 - 💻 JavaScript (ES6+)
 - 🧰 Jest — for writing and running tests
 
-  1.Clone the repository:
-
-🚀 How to Run the Project
+### 🚀 How to Run the Project
 
 1. Clone the repository
 
    ```bash
    git clone https://github.com/VelAl/js-algorithms-and-data-structures.git
-   cd algorithms
+   cd js-algorithms-and-data-structures
    ```
 
 2. Install dependencies:
