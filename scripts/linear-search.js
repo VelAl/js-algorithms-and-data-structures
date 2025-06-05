@@ -1,3 +1,5 @@
+// Simple linear search with time complexity O(n)
+
 const linearSearch = (arr, item) => {
   if (!Array.isArray(arr)) {
     throw new TypeError("Expected first parameter to be an array.");
