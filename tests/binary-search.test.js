@@ -1,6 +1,6 @@
 import {
   binarySearch,
-  binarySearch_recursy,
+  binarySearch_recursion,
 } from "../scripts/binary-search.js";
 
 const sortedArr = [
@@ -9,7 +9,7 @@ const sortedArr = [
 
 const searchFunctions = [
   [binarySearch.name, binarySearch],
-  [binarySearch_recursy.name, binarySearch_recursy],
+  [binarySearch_recursion.name, binarySearch_recursion],
 ];
 
 // Loop through each search function

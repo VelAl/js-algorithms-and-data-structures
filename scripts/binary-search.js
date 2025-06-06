@@ -15,7 +15,7 @@ export const binarySearch = (arr, el) => {
   return -1;
 };
 
-export const binarySearch_recursy = (
+export const binarySearch_recursion = (
   arr,
   el,
   start = 0,
@@ -27,6 +27,6 @@ export const binarySearch_recursy = (
   if (arr[mid] === el) return mid;
 
   return el < arr[mid]
-    ? binarySearch_recursy(arr, el, start, mid - 1)
-    : binarySearch_recursy(arr, el, mid + 1, end);
+    ? binarySearch_recursion(arr, el, start, mid - 1)
+    : binarySearch_recursion(arr, el, mid + 1, end);
 };
