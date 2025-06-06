@@ -14,3 +14,19 @@ export const binarySearch = (arr, el) => {
 
   return -1;
 };
+
+export const binarySearch_recursy = (
+  arr,
+  el,
+  start = 0,
+  end = arr.length - 1
+) => {
+  if (start > end) return -1;
+  const mid = Math.floor((start + end) / 2);
+
+  if (arr[mid] === el) return mid;
+
+  return el < arr[mid]
+    ? binarySearch_recursy(arr, el, start, mid - 1)
+    : binarySearch_recursy(arr, el, mid + 1, end);
+};
