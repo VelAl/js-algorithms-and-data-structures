@@ -22,3 +22,28 @@ export const selectionSort = (arr) => {
 
   return arr;
 };
+
+// _________BUBBLE SORT___________________________________
+// time complexity: O(n^2)
+
+export const bubleSort = (arr) => {
+  let isChanged = true;
+
+  while (isChanged) {
+    let hasChanges = false;
+
+    for (let i = 0; i < arr.length; i++) {
+      if (arr[i + 1] < arr[i]) {
+        hasChanges = true;
+
+        const swap = arr[i];
+        arr[i] = arr[i + 1];
+        arr[i + 1] = swap;
+      }
+    }
+
+    isChanged = hasChanges;
+  }
+
+  return arr;
+};
