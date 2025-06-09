@@ -1,4 +1,4 @@
-import { bubbleSort, selectionSort } from "../scripts/sort.js";
+import { bubbleSort, quickSort, selectionSort } from "../scripts/sort.js";
 
 const unsortedArr = [
   755, -7, 19, 3, 8, 23, 55, 12, 60, 34, 77, 16, 91, 4, -68, 10, 5, 36, 0, 2.5,
@@ -10,12 +10,16 @@ const sortedArr = [
 const sortFunctions = [
   [selectionSort.name, selectionSort],
   [bubbleSort.name, bubbleSort],
+  [quickSort.name, quickSort],
 ];
 const paramsAndResults = [
   [unsortedArr, sortedArr],
   [sortedArr, sortedArr],
   [[], []],
-  [[3, 4, 1], [1, 3, 4]],
+  [
+    [3, 4, 1],
+    [1, 3, 4],
+  ],
 ];
 
 // Loop through each sort function

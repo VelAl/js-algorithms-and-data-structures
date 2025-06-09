@@ -41,3 +41,22 @@ export const bubbleSort = (arr) => {
 
   return arr;
 };
+
+// _________QUICKSORT (Hoare's algorithm)_________________
+// time complexity: O(n log n)
+
+export const quickSort = (arr) => {
+  if (arr.length <= 1) return arr;
+
+  const midInd = Math.floor(arr.length / 2);
+  const min = [];
+  const max = [];
+
+  arr.forEach((el, ind) => {
+    if (ind !== midInd) {
+      el > arr[midInd] ? max.push(el) : min.push(el);
+    }
+  });
+
+  return [...quickSort(min), arr[midInd], ...quickSort(max)];
+};
